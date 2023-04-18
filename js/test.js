@@ -44,7 +44,7 @@ function getTime() {
       "January",
       "February",
       "March",
-      "September",
+      "April",
       "May",
       "June",
       "July",
