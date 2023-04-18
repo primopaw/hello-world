@@ -3,19 +3,26 @@
   margin: 0;
 }
 
-p,h3 {
+p,h3,h2 {
   font-family: 'Orbitron', sans-serif;
   padding-left: 10px;
   padding-right: 10px;
-  color: pink;
+  color: rgb(235, 193, 200);
+}
+
+p{
+
+font-size: 1.5em;
+}
+
+h2 {
+  color: rgb(235, 193, 200);
 }
 
 h3 {
-  color: red;
+  color: rgb(19, 9, 9);
 }
-body {
-  background-color: black;
-}
+
 .container {
   display: flex;
   position: absolute;
@@ -24,18 +31,41 @@ body {
   justify-content: center;
   bottom: 0;
   top: 0;
+  background-image: linear-gradient(black,grey,black);
+  flex-direction: column;
 }
 
-.cont2 {
+.date {
   display: flex;
   height: 100%;
-  justify-content: baseline;
+  justify-content: center;
+  align-items: flex-end;
+}
+.timecont {
+  display: flex;
+  height: 100%;
+  justify-content: center;
   align-items: center;
 }
+.day {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
 
-@media screen and (max-width: 768px) {
-  .cont2 {
+
+@media screen and (max-width: 1000px) {
+  .timecont {
     flex-direction: column;
     justify-content: center;
+  }
+  h2 {
+    font-size: 0.8em;
+  }
+
+  p{
+
+    font-size: 1em;
   }
 }
